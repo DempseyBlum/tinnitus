@@ -42,8 +42,8 @@ const HomePage = ({ data }) => {
   return (
     <Layout>
       <HomePageTemplate
-        heading = {frontmatter.heading}
-        body = {frontmatter.body}
+        heading1 = {frontmatter.heading}
+        body1 = {frontmatter.body}
         heading2 = {frontmatter.heading2}
         body2 = {frontmatter.body2}
         heading3 = {frontmatter.heading3}
@@ -69,8 +69,8 @@ export const pageQuery = graphql`
 query HomePageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "home-page"}}) {
     frontmatter {
-        heading
-        body
+        heading1
+        body1
         heading2
         body2
         heading3
