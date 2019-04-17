@@ -1,6 +1,5 @@
 ---
 templateKey: 'home'
-path: /home
 headin: Our Coffee
 body: blah
 heading2: Our Coffee
