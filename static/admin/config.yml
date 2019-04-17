@@ -68,12 +68,12 @@ collections:
           - {label: Heading, name: heading3, widget: string}
           - {label: "Body", name: "body3", widget: "markdown"}
           {label: Donate, name: donate, widget: list, fields: [
-            {label: SidebarHeading, name: heading4, widget: string}
-            {label: "SidebarBody", name: "body4", widget: "markdown"}
-            {label: SidebarHeading, name: heading5, widget: string}
-            {label: "SidebarBody", name: "body5", widget: "markdown"}
+          - {label: SidebarHeading, name: heading4, widget: string}
+          - {label: "SidebarBody", name: "body4", widget: "markdown"}
+          - {label: SidebarHeading, name: heading5, widget: string}
+          - {label: "SidebarBody", name: "body5", widget: "markdown"}
           ]}
           {label: Donate, name: donate, widget: list, fields: [
-            {label: DonateHeading, name: heading6, widget: string}
-            {label: "DonateBody", name: "body6", widget: "markdown"}
+          - {label: DonateHeading, name: heading6, widget: string}
+          - {label: "DonateBody", name: "body6", widget: "markdown"}
           ]}
