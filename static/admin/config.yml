@@ -61,17 +61,17 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
-          - {label: Heading1, name: heading, widget: string}
-          - {label: "Body1", name: "body", widget: "markdown"}
-          - {label: Heading2, name: heading, widget: string}
-          - {label: "Body2", name: "body", widget: "markdown"}
-          - {label: Heading3, name: heading, widget: string}
-          - {label: "Body3", name: "body", widget: "markdown"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
           {label: Sidebar, name: sidebar, widget: list, fields: [
-            {label: Heading1, name: heading, widget: string}
-            {label: "Body1", name: "body", widget: "markdown"}
-            {label: Heading2, name: heading, widget: string}
-            {label: "Body2", name: "body", widget: "markdown"}
+            {label: Heading, name: heading, widget: string}
+            {label: "Body", name: "body", widget: "markdown"}
+            {label: Heading, name: heading, widget: string}
+            {label: "Body", name: "body", widget: "markdown"}
           ]}
           {label: Donate, name: donate, widget: list, fields: [
             {label: Heading, name: heading, widget: string}
