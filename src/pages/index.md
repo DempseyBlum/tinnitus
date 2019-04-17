@@ -1,6 +1,6 @@
 ---
-templateKey: 'home'
-headin: Our Coffee
+templateKey: 'home-page'
+heading: Our Coffee
 body: blah
 heading2: Our Coffee
 body2: blah

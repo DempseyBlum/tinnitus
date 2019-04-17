@@ -68,7 +68,7 @@ export default HomePage
 export const pageQuery = graphql`
 query HomePageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "home-page"}}) {
-      frontmatter {
+    frontmatter {
         heading
         body
         heading2
@@ -85,7 +85,7 @@ query HomePageTemplate {
             heading6
             body6
         }
-      }
+    }
     }
   }
 `
