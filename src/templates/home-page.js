@@ -4,22 +4,17 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export const HomePageTemplate = ({
-    heading,
-    body,
-    heading2,
-    body2,
-    heading3,
-    body3,
+    main,
     sidebar,
     donate
 }) => (
     <div>
-        {heading}
-        {body}
-        {heading2}
-        {body2}
-        {heading3}
-        {body3}
+        {main.heading}
+        {main.body}
+        {main.heading2}
+        {main.body2}
+        {main.heading3}
+        {main.body3}
         {sidebar.heading4}
         {sidebar.body4}
         {sidebar.heading5}
@@ -30,15 +25,9 @@ export const HomePageTemplate = ({
 )
 
 HomePageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  main: PropTypes.object,
+  sidebar: PropTypes.object,
+  donate: PropTypes.object
 }
 
 const HomePage = ({ data }) => {
@@ -88,6 +77,6 @@ query HomePageTemplate {
             body6
         }
     }
-    }
   }
+}
 `
