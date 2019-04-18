@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import { linkSync } from 'fs';
 
 export const HomePageTemplate = ({
     main,
@@ -14,7 +15,16 @@ export const HomePageTemplate = ({
         <div>{main.welcomeHeading}</div>
         <div>{main.welcomeBody}</div>
         <div>{main.dvdTitle}</div>
-        <div>{sidebar}</div>
+        <div>{sidebar.map(entry => (
+          <div>{entry.heading}</div>,
+          <div>{entry.summary}</div>,
+          <div>{linkSync.map(link => (
+            <div>{link.linkTitle}</div>,
+            <div>{link.link}</div>
+          ))}
+          </div>
+          
+        ))}</div>
         <div>{main.dvdDescription}</div>
         <div>{supportUs.heading}</div>
         <div>{supportUs.body}</div>
