@@ -17,7 +17,7 @@ export const HomePageTemplate = ({
         <div>{sidebar.map(entry => (
           <div>{entry.heading}</div>,
           <div>{entry.summary}</div>,
-          <div>{links.map(link => (
+          <div>{entry.links.map(link => (
             <div>{link.linkTitle}</div>,
             <div>{link.link}</div>
           ))}
