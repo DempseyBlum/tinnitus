@@ -8,7 +8,7 @@ export const AboutPageTemplate = ({
 }) => (
     <div>
         <div>{main.title}</div>
-        <div>{topics.map(topic => (
+        <div>{main.topics.map(topic => (
           <div>
               <div>{topic.heading}</div>
               <div>{topic.body}</div>
