@@ -11,9 +11,9 @@ main:
     dvdDescription: asdf
 
 sidebar:
-    -   Heading: What is Tinnitus?
-        Summary: ""
-        Links: 
+    -   heading: What is Tinnitus?
+        summary: ""
+        links: 
         -   linkTitle: How Common?
             link: Find out more here
 
@@ -23,9 +23,9 @@ sidebar:
         -   linkTitle: How Tinnutus Affects People?
             link: Find out more here
 
-    -   Heading: Management of Tinnitus
-        Summary: "The TAV believes that there are 4 effective keys to successful tinnitus management. These are:"
-        Links: 
+    -   heading: Management of Tinnitus
+        summary: "The TAV believes that there are 4 effective keys to successful tinnitus management. These are:"
+        links: 
         -   linkTitle: 1 Overcoming Fears
             link: Find out more here
 

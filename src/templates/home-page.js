@@ -9,18 +9,14 @@ export const HomePageTemplate = ({
     donate
 }) => (
     <div>
-        <div>{main.heading}</div>
-        <div>{main.body}</div>
-        <div>{main.heading2}</div>
-        <div>{main.body2}</div>
-        <div>{main.heading3}</div>
-        <div>{main.body3}</div>
-        <div>{sidebar.heading4}</div>
-        <div>{sidebar.body4}</div>
-        <div>{sidebar.heading5}</div>
-        <div>{sidebar.body5}</div>
-        <div>{donate.heading6}</div>
-        <div>{donate.body6}</div>
+        <div>{main.introHeading}</div>
+        <div>{main.introBody}</div>
+        <div>{main.welcomeHeading}</div>
+        <div>{main.welcomeBody}</div>
+        <div>{main.dvdTitle}</div>
+        <div>{main.dvdDescription}</div>
+        <div>{donate.heading}</div>
+        <div>{donate.body}</div>
     </div>
 )
 
@@ -59,22 +55,26 @@ query HomePageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "home-page"}}) {
     frontmatter {
         main {
-          heading
-          body
-          heading2
-          body2
-          heading3
-          body3
+          introHeading
+          introBody:
+          welcomeHeading
+          welcomeBody
+      
+          dvdTitle
+          dvdDescription
+      
         }
         sidebar {
-            heading4
-            body4
-            heading5
-            body5
+          heading
+          Summary
+          Links{
+            linkTitle
+            link
+          }
         }
         donate {
-            heading6
-            body6
+            heading
+            body
         }
     }
   }
