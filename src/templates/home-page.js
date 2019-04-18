@@ -67,7 +67,7 @@ query HomePageTemplate {
         sidebar {
           heading
           summary
-          Links{
+          links{
             linkTitle
             link
           }
