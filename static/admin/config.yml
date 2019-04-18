@@ -45,6 +45,5 @@ collections:
               {label: Topics, name: topics, widget: list, fields: [
                 {label: Heading, name: heading, widget: string},
                 {label: Body, name: body, widget: markdown}
+              ]}
             ]}
-            
-            
