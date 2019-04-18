@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-export const HomePageTemplate = ({
+export const AboutPageTemplate = ({
     main,
     sidebar,
     supportUs
@@ -34,18 +34,18 @@ export const HomePageTemplate = ({
     </div>
 )
 
-HomePageTemplate.propTypes = {
+AboutPageTemplate.propTypes = {
   main: PropTypes.object,
   sidebar: PropTypes.object,
   donate: PropTypes.object
 }
 
-const HomePage = ({ data }) => {
+const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <HomePageTemplate
+      <AboutPageTemplate
         main = {frontmatter.main}
         sidebar = {frontmatter.sidebar}
         supportUs = {frontmatter.supportUs}
@@ -54,7 +54,7 @@ const HomePage = ({ data }) => {
   )
 }
 
-HomePage.propTypes = {
+AboutPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -62,11 +62,11 @@ HomePage.propTypes = {
   }),
 }
 
-export default HomePage
+export default AboutPage
 
 export const pageQuery = graphql`
-query HomePageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "home-page"}}) {
+query AboutPageTemplate {
+  markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
     frontmatter {
         main {
           introHeading
