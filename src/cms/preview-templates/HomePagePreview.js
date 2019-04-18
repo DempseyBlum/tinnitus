@@ -9,12 +9,14 @@ const HomePagePreview = ({ entry, getAsset }) => {
     return (
       // this is where the home page template component would be rendered
       <HomePageTemplate
-        heading = {entry.getIn(['data', 'heading'])}
-        body = {entry.getIn(['data', 'body'])}
-        heading2 = {entry.getIn(['data', 'heading2'])}
-        body2 = {entry.getIn(['data', 'body2'])}
-        heading3 = {entry.getIn(['data', 'heading3'])}
-        body3 = {entry.getIn(['data', 'body3'])}
+        main = {{
+          heading: entry.getIn(['data', 'main', 'heading']),
+          body: entry.getIn(['data', 'main', 'body']),
+          heading2: entry.getIn(['data', 'main', 'heading2']),
+          body2: entry.getIn(['data', 'main', 'body2']),
+          heading3: entry.getIn(['data', 'main', 'heading3']),
+          body3: entry.getIn(['data', 'main', 'body3'])
+        }}
         sidebar = {{
           heading4: entry.getIn(['data', 'sidebar', 'heading4']),
           body4: entry.getIn(['data', 'sidebar', 'body4']),

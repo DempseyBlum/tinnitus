@@ -14,21 +14,21 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
-          {label: Main, name: main, widget: list, fields: [
-          - {label: Leading Question, name: heading, widget: string}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: Heading, name: heading2, widget: string}
-          - {label: "Body", name: "body2", widget: "markdown"}
-          - {label: Heading, name: heading3, widget: string}
-          - {label: "Body", name: "body3", widget: "markdown"}
-          ]}
+          - {label: Main, name: main, widget: list, fields: [
+              {label: Leading Question, name: heading, widget: string},
+              {label: "Body", name: "body", widget: "markdown"},
+              {label: Heading, name: heading2, widget: string},
+              {label: "Body", name: "body2", widget: "markdown"},
+              {label: Heading, name: heading3, widget: string},
+              {label: "Body", name: "body3", widget: "markdown"}
+            ]}
           - {label: Sidebar, name: sidebar, widget: list, fields: [
-            {label: Heading, name: heading4, widget: string},
-            {label: "Body", name: "body4", widget: "markdown"},
-            {label: Heading, name: heading5, widget: string},
-            {label: "Body", name: "body5", widget: "markdown"}
-          ]}
+              {label: Heading, name: heading4, widget: string},
+              {label: "Body", name: "body4", widget: "markdown"},
+              {label: Heading, name: heading5, widget: string},
+              {label: "Body", name: "body5", widget: "markdown"}
+            ]}
           - {label: Donate, name: donate, widget: list, fields: [
-            {label: Heading, name: heading6, widget: string},
-            {label: "Body", name: "body6", widget: "markdown"}
-          ]}
+              {label: Heading, name: heading6, widget: string},
+              {label: "Body", name: "body6", widget: "markdown"}
+            ]}
