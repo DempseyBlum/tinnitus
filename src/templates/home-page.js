@@ -14,6 +14,7 @@ export const HomePageTemplate = ({
         <div>{main.welcomeHeading}</div>
         <div>{main.welcomeBody}</div>
         <div>{main.dvdTitle}</div>
+        <div>{sidebar}</div>
         <div>{main.dvdDescription}</div>
         <div>{supportUs.heading}</div>
         <div>{supportUs.body}</div>
