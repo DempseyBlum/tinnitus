@@ -11,7 +11,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       <HomePageTemplate
         main = {frontmatter.main}
         sidebar = {frontmatter.sidebar}
-        donate = {frontmatter.donate}
+        supportUs = {frontmatter.donate}
       />
     )
   } else {

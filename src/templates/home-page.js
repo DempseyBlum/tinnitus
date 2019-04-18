@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 export const HomePageTemplate = ({
     main,
     sidebar,
-    donate
+    supportUs
 }) => (
     <div>
         <div>{main.introHeading}</div>
@@ -34,7 +34,7 @@ const HomePage = ({ data }) => {
       <HomePageTemplate
         main = {frontmatter.main}
         sidebar = {frontmatter.sidebar}
-        donate = {frontmatter.donate}
+        supportUs = {frontmatter.donate}
       />
     </Layout>
   )
