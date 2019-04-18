@@ -34,7 +34,7 @@ const HomePage = ({ data }) => {
       <HomePageTemplate
         main = {frontmatter.main}
         sidebar = {frontmatter.sidebar}
-        supportUs = {frontmatter.donate}
+        supportUs = {frontmatter.supportUs}
       />
     </Layout>
   )
