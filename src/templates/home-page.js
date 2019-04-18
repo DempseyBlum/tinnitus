@@ -25,9 +25,9 @@ export const HomePageTemplate = ({
 )
 
 HomePageTemplate.propTypes = {
-  main: PropTypes.object,
-  sidebar: PropTypes.object,
-  donate: PropTypes.object
+  main: PropTypes.list,
+  sidebar: PropTypes.list,
+  donate: PropTypes.list
 }
 
 const HomePage = ({ data }) => {
