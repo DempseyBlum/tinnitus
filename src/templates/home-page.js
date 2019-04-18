@@ -9,18 +9,18 @@ export const HomePageTemplate = ({
     donate
 }) => (
     <div>
-        {main.heading}
-        {main.body}
-        {main.heading2}
-        {main.body2}
-        {main.heading3}
-        {main.body3}
-        {sidebar.heading4}
-        {sidebar.body4}
-        {sidebar.heading5}
-        {sidebar.body5}
-        {donate.heading6}
-        {donate.body6}
+        <div>{main.heading}</div>
+        <div>{main.body}</div>
+        <div>{main.heading2}</div>
+        <div>{main.body2}</div>
+        <div>{main.heading3}</div>
+        <div>{main.body3}</div>
+        <div>{sidebar.heading4}</div>
+        <div>{sidebar.body4}</div>
+        <div>{sidebar.heading5}</div>
+        <div>{sidebar.body5}</div>
+        <div>{donate.heading6}</div>
+        <div>{donate.body6}</div>
     </div>
 )
 
