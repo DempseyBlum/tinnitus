@@ -15,15 +15,19 @@ export const HomePageTemplate = ({
         <div>{main.welcomeBody}</div>
         <div>{main.dvdTitle}</div>
         <div>{sidebar.map(entry => (
-          <div>{entry.heading}</div>,
-          <div>{entry.summary}</div>,
-          <div>{entry.links.map(link => (
-            <div>{link.linkTitle}</div>,
-            <div>{link.link}</div>
-          ))}
+          <div>
+              <div>{entry.heading}</div>
+              <div>{entry.summary}</div>
+              <div>{entry.links.map(link => (
+                <div>
+                  <div>{link.linkTitle}</div>
+                  <div>{link.link}</div>
+                </div>
+              ))}
+              </div>
           </div>
-          
-        ))}</div>
+        ))}
+        </div>
         <div>{main.dvdDescription}</div>
         <div>{supportUs.heading}</div>
         <div>{supportUs.body}</div>
