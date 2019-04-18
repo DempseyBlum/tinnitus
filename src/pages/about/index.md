@@ -1,5 +1,5 @@
 ---
-templateKey: home-page
+templateKey: about-page
 main:
     introHeading: Do you have Tinnitus (ringing in the ears, buzzing, head noises)?
     introBody: "Tinnitus is a common condition that refers to a range of sounds or 'head noises' such as ringing, hissing, buzzing or clicking. There is no cure for tinnitus, but with appropriate support the condition can be successfully managed so that it has little or no impact on a person's life."
