@@ -10,8 +10,6 @@ const AboutPagePreview = ({ entry, getAsset }) => {
       // this is where the home page template component would be rendered
       <AboutPageTemplate
         main = {frontmatter.main}
-        sidebar = {frontmatter.sidebar}
-        supportUs = {frontmatter.donate}
       />
     )
   } else {
