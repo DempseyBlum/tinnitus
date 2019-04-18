@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: 'home-page'
 main:
   body: >-
     Tinnitus is a common condition that refers to a range of sounds or 'head
