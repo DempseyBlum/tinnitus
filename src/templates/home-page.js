@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
 export const HomePageTemplate = ({
     heading,
@@ -19,8 +20,12 @@ export const HomePageTemplate = ({
         {body2}
         {heading3}
         {body3}
-        {sidebar}
-        {donate}
+        {sidebar.heading4}
+        {sidebar.body4}
+        {sidebar.heading5}
+        {sidebar.body5}
+        {donate.heading6}
+        {donate.body6}
     </div>
 )
 
