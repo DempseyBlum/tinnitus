@@ -12,15 +12,7 @@ main:
     People wishing to contact the TAV, or require tinnitus advice or counselling, should contact the TAV by phone on: 0427 849 885, 0423 203 296, or 03 9755 2238"
 
     dvdTitle: DVD – The 4 Keys to Successful Tinnitus Management
-    dvdDescription:  "If you want to learn how to manage your tinnitus, this DVD is essential viewing. Here is what experts in the field of tinnitus management have said about this DVD.
-
-    "With this DVD we now have a face to put on the mastery of intrusive tinnitus, the calm, knowledgeable, and reassuring face of Ross McKeown. And not only do we have a face, we have a pathway to get from the misery to mastery – The 4 Keys."
-    Stephen M. Nagler, M.D., F.A.C.S. Atlanta, Georgia, USA
-
-
-    "Ross’s remarkable ability to weave personal experience with the latest scientific views is a real strength of the DVD. I will be delighted to recommend this DVD to my patients."
-
-    Laurence McKenna, B.Sc. M. Clin.Psych. Ph.D. Post Grad. Dip. Cognitive Therapy Head of Clinical Psychology in Adult Audiology Royal Throat Nose and Ear Hospital, London"
+    dvdDescription:  "If you want to learn how to manage your tinnitus, this DVD is essential viewing. Here is what experts in the field of tinnitus management have said about this DVD."
 
 
 sidebar:
