@@ -34,3 +34,31 @@ collections:
               {label: Heading, name: heading, widget: string},
               {label: Body, name: body, widget: markdown}
             ]}
+
+      - file: src/pages/about/index.md
+        label: About Page
+        name: about
+        fields:
+          - {label: Template Key, name: templateKey, widget: hidden, default: about-page}
+          - {label: Main, name: main, widget: object, fields: [
+              {label: Intro Heading, name: introHeading, widget: string},
+              {label: Intro Body, name: introBody, widget: markdown},
+              {label: Welcome Heading, name: welcomeHeading, widget: string},
+              {label: Welcome Body, name: welcomeBody, widget: markdown},
+              {label: DVD Title, name: dvdTitle, widget: string},
+              {label: DVD Description, name: dvdDescription, widget: markdown}
+            ]}
+          - {label: Sidebar, name: sidebar, widget: object, fields: [
+              {label: Heading, name: heading, widget: string},
+              {label: Summary, name: summary, widget: string},
+              {label: Links, name: links, widget: list, fields: [
+                {label: Link Title, name: linkTitle, widget: string},
+                {label: Link, name: link, widget: string}
+              ]}
+            ]}
+          - {label: Support Us, name: supportUs, widget: object, fields: [
+              {label: Heading, name: heading, widget: string},
+              {label: Body, name: body, widget: markdown}
+            ]}
+            
+            
