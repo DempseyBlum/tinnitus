@@ -54,6 +54,7 @@ query AboutPageTemplate {
             heading
             body
           }
+        }
     }
   }
 }
