@@ -72,7 +72,7 @@ query HomePageTemplate {
             link
           }
         }
-        donate {
+        supportUs {
             heading
             body
         }
