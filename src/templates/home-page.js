@@ -15,8 +15,8 @@ export const HomePageTemplate = ({
         <div>{main.welcomeBody}</div>
         <div>{main.dvdTitle}</div>
         <div>{main.dvdDescription}</div>
-        <div>{donate.heading}</div>
-        <div>{donate.body}</div>
+        <div>{supportUs.heading}</div>
+        <div>{supportUs.body}</div>
     </div>
 )
 
