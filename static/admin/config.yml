@@ -9,7 +9,7 @@ collections:
   - name: pages
     label: Pages
     create: true
-    slug: {{slug}}
+    slug: "{{slug}}"
     files:
       - file: src/pages/home/index.md
         label: Home Page
