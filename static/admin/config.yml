@@ -22,7 +22,7 @@ collections:
               {label: DVD Title, name: dvdTitle, widget: string},
               {label: DVD Description, name: dvdDescription, widget: markdown}
             ]}
-          - {label: Sidebar, name: sidebar, widget: object, fields: [
+          - {label: Sidebar, name: sidebar, widget: list, fields: [
               {label: Heading, name: heading, widget: string},
               {label: Summary, name: summary, widget: string},
               {label: Links, name: links, widget: list, fields: [
@@ -48,7 +48,7 @@ collections:
               {label: DVD Title, name: dvdTitle, widget: string},
               {label: DVD Description, name: dvdDescription, widget: markdown}
             ]}
-          - {label: Sidebar, name: sidebar, widget: object, fields: [
+          - {label: Sidebar, name: sidebar, widget: list, fields: [
               {label: Heading, name: heading, widget: string},
               {label: Summary, name: summary, widget: string},
               {label: Links, name: links, widget: list, fields: [

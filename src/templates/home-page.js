@@ -36,7 +36,7 @@ export const HomePageTemplate = ({
 
 HomePageTemplate.propTypes = {
   main: PropTypes.object,
-  sidebar: PropTypes.object,
+  sidebar: PropTypes.list,
   donate: PropTypes.object
 }
 
