@@ -11,7 +11,12 @@ export const DonateTemplate = ({
     <div>
         <div>{heading}</div>
         <div>{description}</div>
-        <div>{address}</div>
+        <div>{address.name}</div>
+        <div>{address.street}</div>
+        <div>{address.city}</div>
+        <div>{address.state}</div>
+        <div>{address.postCode}</div>
+        <div>{address.country}</div>
     </div>
 )
 
