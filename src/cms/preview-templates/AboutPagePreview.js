@@ -17,7 +17,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   }
 }
 
-HomePage.propTypes = {
+AboutPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,

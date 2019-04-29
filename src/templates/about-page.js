@@ -35,26 +35,23 @@ const AboutPage = ({ data }) => {
 }
 
 AboutPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+  data: PropTypes.object,
 }
 
 export default AboutPage
 
-export const pageQuery = graphql`
-query AboutPageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
+export const aboutPageQuery = graphql`
+query AboutPage($id: String!) {
+  markdownRemark(id: { eq: $id }) {
+    html
     frontmatter {
-        main {
-          title
-          topics {
-            heading
-            body
-          }
+      main {
+        title
+        topics {
+          heading
+          body
         }
+      }
     }
   }
 }

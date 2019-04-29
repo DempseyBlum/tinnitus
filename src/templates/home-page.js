@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Donate, { DonateTemplate } from './donate';
 
 export const HomePageTemplate = ({
     main
@@ -48,7 +49,7 @@ query HomePageTemplate {
     frontmatter {
         main {
           introHeading
-          introBody:
+          introBody
           welcomeHeading
           welcomeBody
       
