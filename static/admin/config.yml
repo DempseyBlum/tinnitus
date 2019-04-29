@@ -25,18 +25,6 @@ collections:
               {label: DVD Title, name: dvdTitle, widget: string},
               {label: DVD Description, name: dvdDescription, widget: markdown}
             ]}
-          - {label: Sidebar, name: sidebar, widget: list, fields: [
-              {label: Heading, name: heading, widget: string},
-              {label: Summary, name: summary, widget: string, required: false},
-              {label: Links, name: links, widget: list, fields: [
-                {label: Link Title, name: linkTitle, widget: string},
-                {label: Link, name: link, widget: string}
-              ]}
-            ]}
-          - {label: Support Us, name: supportUs, widget: object, fields: [
-              {label: Heading, name: heading, widget: string},
-              {label: Body, name: body, widget: markdown}
-            ]}
 
       - file: src/pages/about/index.md
         label: About Page

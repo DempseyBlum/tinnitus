@@ -38,40 +38,5 @@ main:
     counselling, should contact the TAV by phone on: 0427 849 885, 0423 203 296,
     or 03 9755 2238
   welcomeHeading: Welcome to the Tinnitus Association of Victoria (TAV)
-sidebar:
-  - heading: What is Tinnitus?
-    links:
-      - link: Find out more here
-        linkTitle: How Common?
-      - link: Find out more here
-        linkTitle: Causes?
-      - link: Find out more here
-        linkTitle: How Tinnutus Affects People?
-    summary: test
-  - heading: Management of Tinnitus
-    links:
-      - link: Find out more here
-        linkTitle: 1 Overcoming Fears
-      - link: Find out more here
-        linkTitle: 2 Perception
-      - link: Find out more here
-        linkTitle: 3 Focus
-      - link: Find out more here
-        linkTitle: 4 Adjusting your Lifestyle
-      - link: Find out more here
-        linkTitle: Implementing the ideas in these 4 keys will lead to Habituation
-    summary: >-
-      The TAV believes that there are 4 effective keys to successful tinnitus
-      management. These are:
-supportUs:
-  body: >-
-    The Tinnitus Association of Victoria is a non-profit totally volunteer
-    organisation. We do not receive grants or any financial assistance, so if
-    you have found the information on this web site helpful or have been helped
-    by one of our counsellors and want to help the Association financially,
-    please donate via PayPal or send a cheque or postal note to:
-
-    The Tinnitus Association, 4 Saville St, Ferny Creek Victoria 3786 Australia.
-  heading: Support Us
 ---
 

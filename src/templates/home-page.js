@@ -4,9 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export const HomePageTemplate = ({
-    main,
-    sidebar,
-    supportUs
+    main
 }) => (
     <div>
         <div>{main.introHeading}</div>
@@ -15,29 +13,11 @@ export const HomePageTemplate = ({
         <div>{main.welcomeBody}</div>
         <div>{main.dvdTitle}</div>
         <div>{main.dvdDescription}</div>
-        <div>{sidebar.map(entry => (
-          <div>
-              <div>{entry.heading}</div>
-              <div>{entry.summary}</div>
-              <div>{entry.links.map(link => (
-                <div>
-                  <div>{link.linkTitle}</div>
-                  <div>{link.link}</div>
-                </div>
-              ))}
-              </div>
-          </div>
-        ))}
-        </div>
-        <div>{supportUs.heading}</div>
-        <div>{supportUs.body}</div>
     </div>
 )
 
 HomePageTemplate.propTypes = {
   main: PropTypes.object,
-  sidebar: PropTypes.list,
-  donate: PropTypes.object
 }
 
 const HomePage = ({ data }) => {
@@ -47,8 +27,6 @@ const HomePage = ({ data }) => {
     <Layout>
       <HomePageTemplate
         main = {frontmatter.main}
-        sidebar = {frontmatter.sidebar}
-        supportUs = {frontmatter.supportUs}
       />
     </Layout>
   )
@@ -77,18 +55,6 @@ query HomePageTemplate {
           dvdTitle
           dvdDescription
       
-        }
-        sidebar {
-          heading
-          summary
-          links{
-            linkTitle
-            link
-          }
-        }
-        supportUs {
-            heading
-            body
         }
     }
   }
