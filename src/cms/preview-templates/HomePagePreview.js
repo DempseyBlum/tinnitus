@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { HomePageTemplate } from '../../templates/home-page'
 
-const HomePagePreview = ({ entry, getAsset }) => {
+const HomePagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
   
   if (data) {
     return (
       // this is where the home page template component would be rendered
       <HomePageTemplate
-        main = {frontmatter.main}
+        main = {entry.getIn(['data', 'main'])}
       />
     )
   } else {
@@ -17,11 +17,9 @@ const HomePagePreview = ({ entry, getAsset }) => {
   }
 }
 
-HomePage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
+HomePagePreview.propTypes = {
+  entry: PropTypes.shape({
+    getIn: PropTypes.func,
   }),
 }
 export default HomePagePreview

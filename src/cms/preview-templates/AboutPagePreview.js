@@ -9,7 +9,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
     return (
       // this is where the home page template component would be rendered
       <AboutPageTemplate
-        main = {frontmatter.main}
+        main = {entry.getIn(['data', 'main'])}
       />
     )
   } else {
@@ -17,11 +17,10 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   }
 }
 
-AboutPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
+AboutPagePreview.propTypes = {
+  entry: PropTypes.shape({
+    getIn: PropTypes.func,
   }),
 }
+
 export default AboutPagePreview

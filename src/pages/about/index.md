@@ -3,7 +3,7 @@ templateKey: about-page
 main:
   title: How Tinnitus Affects People
   topics:
-    - body: >-
+    - topicBody: >-
         People with tinnitus may display the following behaviour in the early
         stages:
 
@@ -46,8 +46,8 @@ main:
         available
 
         * whether the person receives appropriate counseling
-      heading: 'How Tinnitus Affects People '
-    - body: >-
+      topicHeading: 'How Tinnitus Affects People '
+    - topicBody: >-
         People with depression and anxiety disorders usually suffer from their
         mental disorder prior to the onset of tinnitus, and not the other way
         around. However, whether depression existed prior to the onset of the
@@ -67,8 +67,8 @@ main:
 
         Remember, the sooner you get treatment, the greater the chance of a fast
         recovery.
-      heading: 'Dealing With Anxiety Disorders and Depression '
-    - body: >-
+      topicHeading: 'Dealing With Anxiety Disorders and Depression '
+    - topicBody: >-
         We all feel anxious from time to time, however, for some people, these
         anxious feelings are overwhelming and cannot be brought under control
         easily.
@@ -86,8 +86,8 @@ main:
         Anxiety is common, especially for some in the early stages of their
         tinnitus. The sooner you get help, the sooner you will learn to control
         the condition.
-      heading: Anxiety Disorders
-    - body: >-
+      topicHeading: Anxiety Disorders
+    - topicBody: >-
         Most people assume that depression is caused simply by recent personal
         difficulties or a chemical imbalance in the brain. Depression however,
         is often caused by the mix of recent events and other longer-term or
@@ -103,14 +103,14 @@ main:
         circumstances are still likely to have an important influence on your
         chances of becoming ill. It's also common for people to experience
         depression and anxiety at the same time.
-      heading: What Causes Depression?
-    - body: >-
+      topicHeading: What Causes Depression?
+    - topicBody: >-
         For more information about anxiety disorders and depression, symptom
         checklists, effective treatments and where to get help, visit
         www.beyondblue.org.au or www.youthbeyondblue.com or call the beyondblue
         info line on 1300 22 4636.
-      heading: Seeking Help
-    - body: >-
+      topicHeading: Seeking Help
+    - topicBody: >-
         There are many possible triggers of tinnitus. Among the most common are:
 
 
@@ -126,8 +126,8 @@ main:
         It is important to consult your doctor and an Ear, Nose and Throat (ENT)
         specialist to establish whether there is any underlying treatable
         medical reason for your tinnitus.
-      heading: Causes
-    - body: >-
+      topicHeading: Causes
+    - topicBody: >-
         When the brain first hears tinnitus it attempts to classify the sound
         from its stored data of sounds with which it is familiar. When no
         'match' can be made from previous experience, the brain focuses on the
@@ -147,15 +147,15 @@ main:
         automatically interprets the sounds as a sign that something is terribly
         wrong, or as a danger signal. If this continues, your mind becomes
         obsessed with the sound, continually focusing on it and thus maintaining
-        your body and mind in a state of high alert.
+        your topicBody and mind in a state of high alert.
 
 
         If this fearful pattern of thought is left unchecked, the negative
         response to the sound is reinforced. This 'programming' of the brain
         must be corrected so that you learn to manage your tinnitus rather than
         letting it manage you.
-      heading: Mechanisms of Tinnitus
-    - body: >-
+      topicHeading: Mechanisms of Tinnitus
+    - topicBody: >-
         Tinnitus is a symptom of a malfunction of the auditory system where by
         the sufferer hears sounds in the ears and head which are not associated
         with any external source.
@@ -177,6 +177,6 @@ main:
         successfully manage their tinnitus to the point where the tinnitus is no
         longer a problem for them, and they can continue to lead full and
         productive lives.
-      heading: 'How Common is Tinnitus? '
+      topicHeading: 'How Common is Tinnitus? '
 ---
 

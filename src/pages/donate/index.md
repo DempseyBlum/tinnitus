@@ -12,4 +12,3 @@ address:
   - country: Australia
   
 ---
-

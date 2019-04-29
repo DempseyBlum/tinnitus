@@ -10,8 +10,8 @@ export const AboutPageTemplate = ({
         <div>{main.title}</div>
         <div>{main.topics.map(topic => (
           <div>
-              <div>{topic.heading}</div>
-              <div>{topic.body}</div>
+              <div>{topic.topicHeading}</div>
+              <div>{topic.topicBody}</div>
           </div>
         ))}
         </div>
@@ -48,8 +48,8 @@ query AboutPage($id: String!) {
       main {
         title
         topics {
-          heading
-          body
+          topicHeading
+          topicBody
         }
       }
     }

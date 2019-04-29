@@ -15,6 +15,13 @@ export const DonateTemplate = ({
     </div>
 )
 
+
+DonateTemplate.propTypes = {
+  heading: PropTypes.string,
+  description: PropTypes.string,
+  address: PropTypes.object
+}
+
 const Donate = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
@@ -29,21 +36,25 @@ const Donate = ({ data }) => {
   )
 }
 
+
 Donate.propTypes = {
-  heading: PropTypes.string,
-  description: PropTypes.string,
-  address: PropTypes.object
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
 }
 
 export default Donate
 
 export const donateQuery = graphql`
-query Donate {
+query DonateTemplate {
 	markdownRemark(frontmatter: {templateKey: {eq: "donate"}}) {
 		frontmatter {
 			heading
 			description
 			address {
+        name
 				street
 				city
 				state
