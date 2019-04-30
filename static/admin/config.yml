@@ -6,50 +6,65 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-	- name: donate
+  - name: donate
 		label: Donate
 		slug: "{{slug}}"
 		file: src/pages/donate/index.md
 		fields:
       - {label: Template Key, name: templateKey, widget: hidden, default: blog-post}
       - {label: Heading, name: heading, widget: string}
-		  - {label: Description, name: description, widget: string}
-		  - {label: Address, name: address, widget: object, fields: [
-					{label: Organisation Name, name: name, widget: string}, 
-					{label: Street Address, name: street, widget: string},
-					{label: City, name: city, widget: string},
-					{label: State, name: state, widget: string},
-					{label: Post Code, name: postCode, widget: integer},
-					{label: Country, name: country, widget: string}
-				]}
+      - {label: Description, name: description, widget: string}
+      - label: Address
+        name: address
+        widget: object
+        fields:
+          - {label: Organisation Name, name: name, widget: string}
+          - {label: Street Address, name: street, widget: string}
+          - {label: City, name: city, widget: string}
+          - {label: State, name: state, widget: string}
+          - {label: Post Code, name: postCode, widget: integer}
+          - {label: Country, name: country, widget: string}
 
-	- name: pages
-		label: Pages
-		create: true
-		slug: "{{slug}}"
-		files:
-			- file: src/pages/home/index.md
-				label: Home Page
-				name: home
-				fields:
-					- {label: Template Key, name: templateKey, widget: hidden, default: home-page}
-					- {label: Main, name: main, widget: object, fields: [
-						{label: Intro Heading, name: introHeading, widget: string},
-						{label: Intro Body, name: introBody, widget: markdown},
-						{label: Welcome Heading, name: welcomeHeading, widget: string},
-						{label: Welcome Body, name: welcomeBody, widget: markdown},
-						{label: DVD Title, name: dvdTitle, widget: string},
-						{label: DVD Description, name: dvdDescription, widget: markdown}
-						]}
-			- file: src/pages/about/index.md
-				label: About Page
-				name: about
-				fields:
-					- {label: Template Key, name: templateKey, widget: hidden, default: about-page}
-					- {label: About Main, name: aboutMain, widget: object, fields: [
-							{label: Title, name: title, widget: string},
-							{label: Topics, name: topics, widget: list, fields: [
-								{label: Topic Heading, name: topicHeading, widget: string},
-								{label: Topic Body, name: topicBody, widget: markdown}
-							]}
-						]}
+  - name: pages
+    label: Pages
+    create: true
+    slug: "{{slug}}"
+    files:
+      - file: src/pages/home/index.md
+        label: Home Page
+        name: home
+        fields:
+          - {label: Template Key, name: templateKey, widget: hidden, default: home-page}
+          - {label: Main, name: main, widget: object, fields: [
+              {label: Intro Heading, name: introHeading, widget: string},
+              {label: Intro Body, name: introBody, widget: markdown},
+              {label: Welcome Heading, name: welcomeHeading, widget: string},
+              {label: Welcome Body, name: welcomeBody, widget: markdown},
+              {label: DVD Title, name: dvdTitle, widget: string},
+              {label: DVD Description, name: dvdDescription, widget: markdown}
+            ]}
+      - file: src/pages/about/index.md
+        label: About Page
+        name: about
+        fields:
+          - {label: Template Key, name: templateKey, widget: hidden, default: about-page}
+          - {label: Title, name: title, widget: string}
+          - label: 'Topics'
+            name: 'topics'
+            widget: 'list'
+            fields:
+              - {label: Topic Heading, name: topicHeading, widget: string}
+              - {label: Topic Body, name: topicBody, widget: markdown}
+      - file: src/pages/management/index.md
+        label: Management Page
+        name: management
+        fields:
+          - {label: Template Key, name: templateKey, widget: hidden, default: about-page}
+          - {label: Title, name: title, widget: string}
+          - label: 'Topics'
+            name: 'topics'
+            widget: 'list'
+            fields: 
+              - {label: Topic Heading, name: topicHeading, widget: string}
+              - {label: Topic Body, name: topicBody, widget: markdown}
+            
