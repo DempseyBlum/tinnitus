@@ -31,7 +31,7 @@ const TreatmentPage = ({ data }) => {
     <Layout>
       <TreatmentPageTemplate
         title = {frontmatter.title}
-        topics = {frontmatter.topics}
+        treatments = {frontmatter.treatments}
       />
     </Layout>
   )
