@@ -12,7 +12,7 @@ address:
   country: Australia
   name: The Tinnitus Association
   postCode: 3786
-  state: 'Victoria '
+  state: Victoria
   street: 4 Saville St
 ---
 
