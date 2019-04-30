@@ -22,7 +22,7 @@ collections:
           - {label: Street Address, name: street, widget: string}
           - {label: City, name: city, widget: string}
           - {label: State, name: state, widget: string}
-          - {label: Post Code, name: postCode, widget: integer}
+          - {label: Post Code, name: postCode, widget: number}
           - {label: Country, name: country, widget: string}
 
   - name: pages
