@@ -67,4 +67,16 @@ collections:
             fields: 
               - {label: Topic Heading, name: topicHeading, widget: string}
               - {label: Topic Body, name: topicBody, widget: markdown}
+      - file: src/pages/treatment/index.md
+        label: Treatment Page
+        name: treatment
+        fields:
+          - {label: Template Key, name: templateKey, widget: hidden, default: about-page}
+          - {label: Title, name: title, widget: string}
+          - label: 'Treatments'
+            name: 'treatments'
+            widget: 'list'
+            fields: 
+              - {label: Treatment Heading, name: treatmentHeading, widget: string}
+              - {label: Treatment Body, name: treatmentBody, widget: markdown}
             
