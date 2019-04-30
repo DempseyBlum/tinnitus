@@ -8,11 +8,11 @@ description: >-
   of our counsellors and want to help the Association financially, please donate
   via PayPal or send a cheque or postal note to
 address:
-  - city: a
-    country: a
-    name: a
-    postCode: 1
-    state: a
-    street: a
+  city: a
+  country: a
+  name: a
+  postCode: 1
+  state: a
+  street: a
 ---
 
