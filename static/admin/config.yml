@@ -7,11 +7,11 @@ public_folder: /img
 
 collections:
   - name: donate
-		label: Donate
-		slug: "{{slug}}"
-		file: src/pages/donate/index.md
-		fields:
-      - {label: Template Key, name: templateKey, widget: hidden, default: blog-post}
+    label: Donate
+    slug: "{{slug}}"
+    folder: src/pages/donate
+    fields:
+      - {label: Template Key, name: templateKey, widget: hidden, default: donate}
       - {label: Heading, name: heading, widget: string}
       - {label: Description, name: description, widget: string}
       - label: Address
