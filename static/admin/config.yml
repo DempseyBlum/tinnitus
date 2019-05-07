@@ -53,8 +53,8 @@ collections:
             name: 'topics'
             widget: 'list'
             fields:
-              - {label: Topic Heading, name: topicHeading, widget: string}
-              - {label: Topic Body, name: topicBody, widget: markdown}
+              - {label: Topic Heading, name: Heading, widget: string}
+              - {label: Topic Body, name: Body, widget: markdown}
       - file: src/pages/management/index.md
         label: Management Page
         name: management
@@ -84,6 +84,18 @@ collections:
         name: sleep
         fields:
           - {label: Template Key, name: templateKey, widget: hidden, default: sleep-page}
+          - {label: Title, name: title, widget: string}
+          - label: 'Topics'
+            name: 'topics'
+            widget: 'list'
+            fields: 
+              - {label: Topic Heading, name: Heading, widget: string}
+              - {label: Topic Body, name: Body, widget: markdown}
+      - file: src/pages/protection/index.md
+        label: Protection Page
+        name: protection
+        fields:
+          - {label: Template Key, name: templateKey, widget: hidden, default: protection-page}
           - {label: Title, name: title, widget: string}
           - label: 'Topics'
             name: 'topics'
